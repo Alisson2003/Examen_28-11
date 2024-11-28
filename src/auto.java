@@ -5,6 +5,7 @@ public class auto extends Transportes{
     double kilometraje;
 
     public auto() {
+
     }
 
     public auto(String tipo, String marca, String color, String placa, int anioFabricacion, double kilometraje) {

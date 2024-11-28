@@ -4,6 +4,7 @@ public class Transportes {
     String color;
 
     public Transportes(){
+
     }
 
     public Transportes(String tipo, String marca, String color) {

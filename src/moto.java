@@ -2,6 +2,7 @@ public class moto extends Transportes{
     int numeroLlantas;
 
     public moto() {
+
     }
 
     public moto(String tipo, String marca, String color, int numeroLlantas) {

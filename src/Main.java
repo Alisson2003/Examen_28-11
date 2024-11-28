@@ -19,6 +19,7 @@ public class Main {
         auto auto2 = new auto("Terrestre","Chevrolet","Vino","PIN-124",2014,150.36);
         auto2.datos();
 
+
         System.out.println(" -------------------------- ");
 
         moto moto1 = new moto("Terrestre","Susuki","Negro",2);
