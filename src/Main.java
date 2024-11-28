@@ -3,10 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
 
-        Transportes transportes1 = new Transportes();
-        transportes1.datos();
 
         System.out.println(" -------------------------- ");
 
@@ -19,17 +16,25 @@ public class Main {
         auto auto2 = new auto("Terrestre","Chevrolet","Vino","PIN-124",2014,150.36);
         auto2.datos();
 
+        System.out.println(" -------------------------- ");
+
+        moto moto = new moto("Terrestre","Susuki","Naranja",0);
+        moto.datos();
+        moto.caracteristicas();
 
         System.out.println(" -------------------------- ");
 
-        moto moto1 = new moto("Terrestre","Susuki","Negro",2);
+        moto moto1 = new moto("Terrestre","Susuki","Negro",3);
         moto1.datos();
         moto1.caracteristicas();
 
         System.out.println(" -------------------------- ");
+        //LLamado a las exepciones
+        System.out.println("Ingrese datos de la moto");
+        System.out.println();
 
-        moto moto2 = new moto("Terrestre","Susuki","Blanco",5);
-        moto2.datos();
+        moto moto2 = new moto("Terrestre","Susuki","Blanco",2);
+        moto2.datosM();
         moto2.caracteristicas();
 
     }

@@ -1,8 +1,13 @@
+import java.util.Scanner;
+
 public class moto extends Transportes{
     int numeroLlantas;
 
     public moto() {
 
+    }
+    public moto(int numeroLlantas) {
+        this.numeroLlantas = numeroLlantas;
     }
 
     public moto(String tipo, String marca, String color, int numeroLlantas) {
@@ -18,12 +23,22 @@ public class moto extends Transportes{
         this.numeroLlantas = numeroLlantas;
     }
 
-    @Override
-    public void datos(){
-        super.datos();
+    public void datosMoto(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ingrese la placa de la moto");
+        String placa = sc.nextLine();
+        System.out.println("Ingrese el color de la moto");
+        String color = sc.nextLine();
+        System.out.println("Ingrese el tipo de la moto");
+        String tipo = sc.nextLine();
+        System.out.println("La placa es: " + placa);
+        System.out.println("El color es: " + color);
+        System.out.println("El tipo es: " + tipo);
     }
 
-    public void datosMoto() {
+
+    public void datosM() {
+        datosMoto();
         System.out.println("Numero de llantas: " + getNumeroLlantas());
     }
 
@@ -31,7 +46,9 @@ public class moto extends Transportes{
 
         try {
             if (numeroLlantas == 2 ){
-                datosMoto();
+                datosM();
+            }else if (numeroLlantas == 0){
+                System.out.println("El numero de llantas no existe");
             }else if (numeroLlantas >= 3){
                 System.out.println("El numero de llantas no existe");
             }
